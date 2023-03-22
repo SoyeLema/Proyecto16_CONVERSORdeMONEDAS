@@ -7,7 +7,7 @@ const error = document.querySelector(".error")
 
 
 const apiURL = "https://mindicador.cl/api/";
-const apiLocal = "assets/js/mindicador.json";
+/* const apiLocal = "assets/js/mindicador.json"; */
 
 let chart;
 
@@ -27,7 +27,7 @@ async function getMonedas() {
         console.log("API no disponible")
         error.innerHTML = `ERROR 503: La Base de Datos no está disponible en este momento. Inténtalo más tarde`
         /* alert("Es posible que los valores estén desactualizados debido a que el servicio no se encuentra online.") */
-        /*     const endpoint = apiLocal;
+        /*  const endpoint = apiLocal;
             const info = await fetch(endpoint);
             const monedas = await info.json();
             console.log("Objeto local de Api: ", monedas);
