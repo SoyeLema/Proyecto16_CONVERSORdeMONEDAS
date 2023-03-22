@@ -82,6 +82,14 @@ hr {
     width: 100%;
     height: 35px;
     padding: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.boton:hover {
+    background-color: #6ff7f7;
+    color: #3c90a4;
+    transition: 0.8s;
 }
 
 .resultado {
