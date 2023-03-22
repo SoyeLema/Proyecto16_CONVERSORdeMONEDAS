@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Conversor de Monedas</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <hr>
+            <h1>Conversor de Monedas Nacional</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="textclp">
+                <h2>Pesos CLP</h2>
+            </div>
+            <input type="number" id="input" class="input" min="0">
+            <div class="textconv">
+                <h3>Moneda a convertir:</h3>
+            </div>
+            <div class="conv">
+                <select name="select" id="select" class="select">
+                    <option value="dolar">Dólar</option>
+                    <option value="euro" selected>Euro</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <button id="convertir" class="boton">Convertir</button>
+            </div>
+            <div class="resultado">
+                <h3>Resultado: <span id="result"></span></h3>
+            </div>
+
+        </div>
+        <div class="error"></div>
+
+        <div class="graficos">
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+
+
+
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
