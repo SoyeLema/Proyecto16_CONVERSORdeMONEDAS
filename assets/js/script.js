@@ -18,7 +18,7 @@ async function getMonedas() {
         const endpoint = apiURL + select.value;
         const info = await fetch(endpoint);
         const monedas = await info.json();
-        console.log("Objeto Original de Api: ", monedas);
+        console.log("API disponible - objeto original de la API: ", monedas);
         filtroFechas(monedas);
         filtroCalc(monedas)
 
@@ -47,8 +47,8 @@ function filtroCalc(data) {
     for (i = 0; i < 1; i++) {
         arrayCalc.push(data.serie[i]);
     }
-    console.log("MIRAAAAA AQUIIII ABAJOOOO")
-    console.log(arrayCalc);
+    /* console.log("MIRA AQUÍ SI ESTÁ FUNCIONANDO!!!")
+    console.log(arrayCalc); */
     calcular(arrayCalc);
 }
 
@@ -73,7 +73,7 @@ function filtroFechas(data) {
     for (i = 0; i < 10; i++) {
         arrayFechas.push(data.serie[i]);
     }
-    console.log(arrayFechas);
+    /* console.log(arrayFechas); */
     renderGrafico(arrayFechas);
 
 }
