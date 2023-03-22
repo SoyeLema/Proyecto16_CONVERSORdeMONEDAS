@@ -119,7 +119,7 @@ function renderGrafico(data) {
 //EVENTO AL CLICK EN BOTON ---------------------------------------------
 btn.addEventListener("click", async () => {
     if (input.value < 0 || input.value == "") {
-        alert("DEBES INGRESAR UN VALOR ENTERO POSITIVO")
+        alert("DEBES INGRESAR UN NÚMERO ENTERO POSITIVO")
     } else {
         getMonedas();//SE LLAMA A LA FUNCIÓN PRINCIPAL QUE CONTIENE TODAS LAS FUNCIONES DEL SITIO
     }
